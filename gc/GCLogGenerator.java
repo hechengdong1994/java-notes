@@ -4,7 +4,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * GC日志生成
  * <p>
- * java -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xms256m -Xmx256m GenerateGCLog duration=1
+ * java -XX:+PrintGCDetails -XX:+PrintGCTimeStamps -Xms256m -Xmx256m GCLogGenerator duration=1
  * -XX:+UseSerialGC
  * -XX:+UseParralelGC
  * -XX:+UseConcMarkSweepGC
@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
  *
  * @author Administrator
  */
-public class GenerateGCLog {
+public class GCLogGenerator {
     private static final Random RANDOM = new Random();
 
     public static void main(String[] args) {
